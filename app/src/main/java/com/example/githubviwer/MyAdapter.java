@@ -36,10 +36,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         holder.txtName.setText(users.get(position).getName());
         holder.txtLogin.setText(users.get(position).getLogin());
         holder.txtId.setText(""+users.get(position).getId());
-
         Picasso.get().load(users.get(position).getAvatar_url()).into(holder.img);
-
-
     }
 
     @Override
@@ -48,7 +45,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder{
-
         TextView txtName;
         TextView txtLogin;
         TextView txtId;
